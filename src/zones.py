@@ -27,5 +27,16 @@ def zone_summary(data):
 
 
 
+test_df = pd.DataFrame({
+    "heart_rate": [100, 120, 140, 160, 180, 190],
+    "power": [90, 110, 150, 200, 220, 250]
+})
 
+max_hr = 200
+
+result = zones(test_df, max_hr)
+print(result)
+
+print("\nSUMMARY:")
+print(zone_summary(result))
 
