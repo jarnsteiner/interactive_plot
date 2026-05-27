@@ -23,3 +23,9 @@ pdm install
 App starten mit:
 ```bash
 streamlit run .\main.py
+```
+
+UI Oberfläche:
+
+
+![Screenshot der App](image.png)
