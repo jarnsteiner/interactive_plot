@@ -1,8 +1,9 @@
 import pandas as pd
 
 def load_activity(data):
-
-    return pd.read_csv(data)
+    df = pd.read_csv(data)
+    df["Time"] = range(len(df))
+    return df
 
 def get_stats(df):
 
@@ -12,5 +13,6 @@ def get_stats(df):
     return mittelwert,maximum
 
 
+    
 
    
