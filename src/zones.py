@@ -12,8 +12,8 @@ def zones(df,max_hr):
         labels = [1, 2, 3, 4, 5]
 
     ).astype(Int64)
-    
-    return data 
+
+return data 
 
 def zone_summary(data):
     summary = data.groupby("zone").agg({
