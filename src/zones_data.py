@@ -24,8 +24,6 @@ def zone_summary(df, max_hr):
 
     ).astype("Int64")
 
-
-
     summary = data.groupby("zone").agg({
         "PowerOriginal": "mean",
         "zone": "count"
