@@ -1,4 +1,4 @@
-import panda as pd
+import pandas as pd
 
 def zones(df,max_hr):
 
@@ -11,7 +11,7 @@ def zones(df,max_hr):
         bins = [i * max_hr for i in grenzen],
         labels = [1, 2, 3, 4, 5]
 
-    ).astype(Int64)
+    ).astype("Int64")
 
 return data 
 
