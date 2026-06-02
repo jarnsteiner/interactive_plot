@@ -73,6 +73,7 @@ def main():
 
     st.plotly_chart(fig)
     st.title("Power")
+    st.text("Maxpower = "+str(W_max)+ " Midpower = "+ str(W_mid))
     st.plotly_chart(fig2)
     st.title("Zeiten in den Zonen")
     st.table(zones_data.zone_summary(df, max_hr))
